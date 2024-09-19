@@ -6,7 +6,7 @@ const PigGame = () => {
   const [size, setSize] = useState(100);
 
   // สร้าง state สำหรับการเปลี่ยนรูปภาพ
-  const [pigImage, setPigImage] = useState('images.jpg'); // เริ่มต้นด้วยรูปภาพหมู
+  const [pigImage, setPigImage] = useState('/images.jpg'); // เริ่มต้นด้วยรูปภาพหมู
 
   // ฟังก์ชันสำหรับเพิ่ม level และขนาดของรูปภาพ
   const feedPig = (points) => {
@@ -18,7 +18,7 @@ const PigGame = () => {
 
     // เมื่อ level เกิน 100 จะเปลี่ยนเป็นรูปภาพของตัวเอง
     if (newLevel >= 100) {
-      setPigImage('Screenshot 2024-09-13 143247.png'); // เปลี่ยนลิงก์นี้เป็นรูปภาพของคุณเอง
+      setPigImage('/Screenshot 2024-09-13 143247.png'); // เปลี่ยนลิงก์นี้เป็นรูปภาพของคุณเอง
     }
   };
 
